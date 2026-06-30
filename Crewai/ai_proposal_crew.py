@@ -1,5 +1,27 @@
 from crewai import Agent, Task, Crew, Process
 
+
+# ============================================================
+# ENUNCIADO : CrewAI Ejemplo 1 — Pipeline multiagente de propuesta comercial IA
+# DESCRIPCIÓN: Define un equipo de tres agentes especializados (Researcher,
+#              Analyst, Writer) que colaboran en secuencia. Cada agente recibe
+#              el output del anterior como contexto y produce un resultado que
+#              alimenta al siguiente, hasta generar una propuesta comercial final.
+#
+# CASO DE USO : Automatización del ciclo completo de preventa: investigar el
+#               mercado objetivo (restaurantes, hoteles, inmobiliarias en Perú),
+#               identificar oportunidades SaaS viables y redactar una propuesta
+#               lista para enviar al cliente, sin intervención manual.
+#
+# CATEGORÍA DE NEGOCIO: Desarrollo de negocio / Automatización de ventas
+#
+# OTROS EJEMPLOS:
+#   1. Crew de due diligence: investigador + analista financiero + redactor de informe.
+#   2. Crew de soporte: agente de diagnóstico + agente de solución + agente de respuesta.
+#   3. Crew de contenido: investigador de tendencias + redactor + editor SEO.
+# ============================================================
+
+
 researcher = Agent(
     role="AI Market Researcher",
     goal="Investigar oportunidades de automatización con IA para empresas",
