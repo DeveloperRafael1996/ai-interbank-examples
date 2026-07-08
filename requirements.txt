@@ -1,3 +1,7 @@
 langchain
 langchain-openai
 python-dotenv
+llama-index
+llama-index-core
+llama-index-llms-openai
+fastapi
